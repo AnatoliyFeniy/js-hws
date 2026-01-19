@@ -17,3 +17,11 @@ for(let i = 1; i <= min; i++){
         nsd = i
     }
 }
+
+//3
+let numb = parseInt(prompt("Введіть число:"))
+for(let i = 1; i <= numb; i++){
+    if(numb % i === 0){
+        console.log(i)
+    }
+}
