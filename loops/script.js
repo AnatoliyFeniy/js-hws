@@ -14,7 +14,7 @@ let min = n1 < n2 ? n1 : n2;
 let nsd = 0;
 for(let i = 1; i <= min; i++){
     if(n1 % i === 0 && n2 % i === 0){
-        nsd = i
+        nsd = i;
     }
 }
 
@@ -22,6 +22,17 @@ for(let i = 1; i <= min; i++){
 let numb = parseInt(prompt("Введіть число:"))
 for(let i = 1; i <= numb; i++){
     if(numb % i === 0){
-        console.log(i)
+        console.log(i);
     }
 }
+
+//4
+let nom = parseInt(prompt("Введіть число:"));
+let count = 0;
+while(nom > 0){
+    count++
+    nom = Math.floor(nom / 10);
+}
+alert(count)
+
+//5
