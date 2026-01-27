@@ -41,3 +41,36 @@ for(const el of arr){
     newArr.unshift(el)
 }
 alert(newArr)
+
+//6
+let sorted = true;
+for(let i = 1; i < arr.length; i++){
+    if(arr[i] < arr[i - 1]){
+        sorted = false;
+        break;
+    }
+}
+console.log(sorted);
+
+//7
+let array = [];
+let a = "";
+for(const el of str){
+    if(el === " "){
+        array.push(a);
+        a = "";
+    }
+    else{
+        a += el;
+    }
+}
+if (a !== "") {
+    array.push(a);
+}
+let longest = array[0];
+for(const el of array){
+    if(el.length > longest.length){
+        longest = el;
+    }
+}
+alert(longest);
