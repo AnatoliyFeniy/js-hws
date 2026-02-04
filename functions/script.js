@@ -59,3 +59,37 @@ const minmax=function(a,b){
     }
 }
 minmax(10,10000);
+
+//7
+const time=function(h,m,s){
+    if(h === undefined){
+        h = "00";
+    }
+    if(m === undefined){
+        m = "00";
+    }
+    if(s === undefined){
+        s = "00";
+    }
+    console.log(`${h}:${m}:${s}`);
+}
+time(12,53);
+
+//8
+const time2=function(h,m,s){
+    let hsum = h * 3600;
+    let msum = m * 60;
+    let res = hsum + msum + s;
+    return res;
+}
+console.log(time2(12,25,30));
+
+//9
+const time3=function(s){
+    let h = Math.floor(s / 3600);
+    let h2 = s - h * 3600;
+    let m = Math.floor(h2 / 60)
+    let sec = h2 - m * 60
+    console.log(`${h}:${m}:${sec}`)
+}
+time3(44730)
