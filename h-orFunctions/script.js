@@ -40,5 +40,8 @@ console.log(sail);
 const get2 = arr.map(el => el.price);
 console.log(get2);
 //8
-// const max=arr.map(num=>Math.max(num.price));
-// console.log(max);
+const max = Math.max(...arr.map(item => item.price));
+console.log(max);
+//9
+const sort = arr.sort((a, b) => b.price - a.price);
+console.log(sort);
