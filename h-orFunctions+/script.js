@@ -7,6 +7,21 @@ const students = [
  { id: 5, name: "Андрій", age: 19, course: 2, averageGrade: 84, city: "Дніпро" },
  { id: 6, name: "Катерина", age: 22, course: 4, averageGrade: 98, city: "Львів" }
 ];
-const sum = students.reduce((acc, student)=>acc+student.averageGrade,0)
-let avg = sum / students.length
-console.log(avg)
+const sum = students.reduce((acc, student)=>acc+student.averageGrade,0);
+let avg = sum / students.length;
+console.log(avg);
+//2
+const sum2 = students.reduce((a, b)=> a+b.age, 0);
+console.log(sum2);
+//3
+const newst = {}
+const res = students.reduce((acc, stud)=>{
+    if(acc[stud.city]){
+        acc[stud.city] += 1
+    }
+    else{
+        acc[stud.city] = 1
+    }
+    return acc
+}, {});
+console.log(res);
