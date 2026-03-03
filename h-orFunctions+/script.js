@@ -14,7 +14,7 @@ console.log(avg);
 const sum2 = students.reduce((a, b)=> a+b.age, 0);
 console.log(sum2);
 //3
-const newst = {}
+const newst = {};
 const res = students.reduce((acc, stud)=>{
     if(acc[stud.city]){
         acc[stud.city] += 1
@@ -25,3 +25,21 @@ const res = students.reduce((acc, stud)=>{
     return acc
 }, {});
 console.log(res);
+//4
+const srt1 = students.sort((a,b)=>a.averageGrade-b.averageGrade); //сортування по зростанню, a має йти першим від b, тобто a-b має мати від'ємне значення
+console.log(srt1);
+const srt2 = students.sort((a,b)=>b.averageGrade-a.averageGrade); //сортування по спаданню, b має йти першим від a, тобто b-a > 0
+console.log(srt2);
+//5
+const sort1 = [...students].sort((a,b)=>a.age-b.age);
+const sort2 = [...students].sort((a,b)=>b.age-a.age);
+const result = students.reduce((acc, student)=>{
+    if(student.age === sort1[0].age){
+        console.log(`${student.name} - Наймолодший учень`)
+    }
+    if(student.age === sort2[0].age){
+        console.log(`${student.name} - Найстарший учень`)
+    }
+    return acc
+}, {});
+console.log(result);
