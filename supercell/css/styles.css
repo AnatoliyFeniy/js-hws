@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaldi:wght@400;700&family=Jersey+25&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1784px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+:root{
+    --main-color: #000000;
+}
+/* ------------------------------------------------header------------------------------------------- */
+.header-wrap{
+    height: 112px;
+    background-color: var(--main-color);
+    padding-left: 17px;
+    .header-logo{
+        gap: 92px;
+        align-items: center;
+    }
+    .header-menu{
+        margin-top: 45px;
+        margin-left: 92px;
+        gap: 79px;
+        a{
+            font-family: "Jaldi", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 72%;
+            letter-spacing: 13%;
+            color: #808080;
+        }
+    }
+    .header-buttons{
+        margin-left: 738px;
+        align-items: baseline;
+        margin-top: 22px;
+    
+    }
+    .header-buttons img:nth-child(2) {
+    padding-bottom: 10px;
+}
+    .header-buttons img:nth-child(3) {
+    padding-bottom: 2px;
+    margin-left: 31px;
+}
+    .header-buttons img:nth-child(4) {
+    padding-bottom: 3px;
+    margin-left: 31px;
+}
+}
+/* ----------------------------------------------section 1------------------------------------- */
+.sec1-wrap{
+    gap: 40px;
+    align-items: center;
+    padding-left: 0;
+    .sec1-info{
+        text-align: center;
+        .sec1-title{
+            font-family: "Jersey 25", sans-serif;
+            font-weight: 400;
+            font-size: 128px;
+            line-height: 100%;
+            color: var(--main-color);
+        }
+        h2{
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 100%;
+        }
+        .sec1-button{
+            margin-top: 104px;
+            width: 231px;
+            height: 78px;
+            background-color: #2D85F3;
+            color: white;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 100%;
+            border: none;
+            border-radius: 15px;
+        }
+    }
+
+}
+/* ----------------------------------------------section 2------------------------------------- */
+.sec2{
+    margin-top: 119px;
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 30px;
+    .card{
+        text-align: center;
+        h2{
+            margin-top: 35px;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 100%;
+            color: #FB4A9D;
+        }
+        p{
+            margin-top: 42px;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            color: var(--main-color);
+            line-height: 100%;
+        }
+    }
+}
+}
+/* ----------------------------------------------section 3------------------------------------- */
+.sec3-wrap{
+    margin-top: 131px;
+    background-image: url(/js-hws/supercell/images/image\ 10.png);
+    .sec3-info{
+        padding-left: 585px;
+        padding-top: 105px;
+        h2{
+            font-family: "Inter", sans-serif;
+            font-weight: 800;
+            font-size: 32px;
+            color: #FFFFFF;
+        }
+        button{
+            margin-top: 81px;
+            width: 94px;
+            height: 41px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            color: var(--main-color);
+            border: none;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+        }
+    }
+    img{
+        margin-left: 330px;
+    }
+}
+/* ----------------------------------------------section 4------------------------------------- */
+.sec4-wrap{
+    background-color: #1F7AEB;
+    height: 370px;
+    img{
+        padding-left: 440px;
+    }
+    .sec4-info{
+        margin-left: 157px;
+        margin-top: 77px
+    }
+    .sec4-title{
+        font-family: "Inter", sans-serif;
+        font-weight: 800;
+        font-size: 32px;
+        color: #FFFFFF;
+    }
+    p{
+        margin-top: 17px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+    a{
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+    button{
+        width: 94px;
+        height: 41px;
+        margin-top: 35px;
+        border-radius: 10px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--main-color);
+        background-color: #FFFFFF;
+        border: none;
+    }
+}
+/* ----------------------------------------------footer-------------------------------------- */
+.footer-wrap{
+    height: 301px;
+    background-color: var(--main-color);
+    padding-left: 170px;
+    position: relative;
+}
+.ft-socials{
+    p{
+        color: #FFFFFF;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        padding-top: 50px;
+    }
+}
+.socials{
+    align-items: center;
+}
+.download{
+    position: absolute;
+    right: 59px;
+    top: 57px;
+    gap: 10px;
+}
+.line{
+    margin-top: 34px;
+    height: 1px;
+    width: 1550px;
+    background-color: #808080;
+}
+.ft-menu{
+    margin-top: 26px;
+    gap: 19px;
+    a{
+        color: #FFFFFF;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+    }
+}
+.loc{
+    margin-top: 24px;
+    a{
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 11px;
+        color: #808080;
+    }
+}
+.socials img:nth-child(1) {
+    padding-bottom: 5px;
+}
+.socials img:nth-child(3) {
+    padding-left: 5px;
+    padding-top: 4px;
+}
+.socials img:nth-child(4) {
+    padding-top: 4px;
+    padding-left: 3px;
+}
