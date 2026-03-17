@@ -26,6 +26,9 @@ a {
 :root{
     --main-color: #000000;
 }
+.hidden{
+    display: none;
+}
 /* ------------------------------------------------header------------------------------------------- */
 .header-wrap{
     height: 112px;
@@ -49,7 +52,7 @@ a {
         }
     }
     .header-buttons{
-        margin-left: 738px;
+        margin-left: 508px;
         align-items: baseline;
         margin-top: 22px;
     
@@ -65,6 +68,23 @@ a {
     padding-bottom: 3px;
     margin-left: 31px;
 }
+}
+.add .header-wrap {
+    background-color: #1F7AEB;
+}
+.add .header-menu a {
+    color: white;
+}
+.btn{
+    width: 100px;
+    margin-left: 40px;
+    height: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+}
+.btn-text{
+    color: #FFFFFF;
 }
 /* ----------------------------------------------section 1------------------------------------- */
 .sec1-wrap{

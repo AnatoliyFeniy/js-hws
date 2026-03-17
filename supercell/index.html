@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-    <div class="container">
+    <div class="container" id="container">
         <div class="header-wrap flex">
             <div class="header-logo flex">
                 <img src="./images/SUP ERC ELL.png" alt="logo">
@@ -22,6 +22,11 @@
                         <li class="header-items"><a href="#">About Us</a></li>
                     </ul>
                 </nav>
+            </div>
+            <div class="flex">
+                <button class="btn" onclick="remove()">remove</button>
+                <button class="btn" onclick="change()">change</button>
+                <p class="btn-text" id="btnText">Статус: початковий</p>
             </div>
             <div class="header-buttons flex">
                 <img src="./images/image-removebg-preview 1.png" alt="img">
@@ -147,6 +152,6 @@ Finland</a>
         </div>
     </div>
 </footer>
-    <script src="./script.js"></script>
+    <script src="/js-hws/supercell/script/script.js"></script>
 </body>
 </html>
