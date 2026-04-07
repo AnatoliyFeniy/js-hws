@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap flex">
+                <img class="header-logo" src="./images/лого школи 1.png" alt="logo">
+                <div class="burger flex">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <nav>
+                    <div>
+                        <ul class="header-menu flex">
+                            <li class="header-items">
+                                <a class="header-link" href="#">Головна</a>
+                            </li>
+                            <li class="header-items">
+                                <a class="header-link" href="#">Про нас</a>
+                            </li>
+                            <li class="header-items1">
+                                <a class="header-link" href="#">Математика</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <button class="header-button">Приєднатися</button>
+            </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="sec1-wrap">
+                    <div class="s1box">
+                        <h2>МАТЕМАТИКА&JAVASCRIPT</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="sec2-wrap">
+                    <div class="card">
+                        <h3>Обчислення дискримінанта (D) і коренів<br>квадратного рівняння</h3>
+                        <input type="number" placeholder="a" class="inpt" id="a">
+                        <input type="number" placeholder="b" class="inpt" id="b">
+                        <input type="number" placeholder="c" class="inpt" id="c">
+                        <button class="cbtn" id="Dbtn">Обчислити</button>
+                        <p id="Dp"></p>
+                    </div>
+                    <div class="card">
+                        <h3>Математичний калькулятор</h3>
+                        <input type="number" placeholder="Введіть перше число" class="inpt" id="n1">
+                        <input type="text" placeholder="Введіть оператор" class="inpt" id="op">
+                        <input type="number" placeholder="Введіть друге число" class="inpt" id="n2">
+                        <button class="cbtn" id="Cbtn">Обчислити</button>
+                        <p id="Cp"></p>
+                    </div>
+                    <div class="card">
+                        <h3>Знаходження більшого числа</h3>
+                        <input type="number" placeholder="Введіть перше число" class="inpt" id="p1">
+                        <input type="number" placeholder="Введіть друге число" class="inpt" id="p2">
+                        <button class="cbtn" id="Pbtn">Порівняти</button>
+                        <p id="Pp"></p>
+                    </div>
+                    <div class="card">
+                        <h3>Вгадай число</h3>
+                        <input type="number" placeholder="Введіть число" class="inpt" id="g">
+                        <button class="cbtn" id="Gbtn">Вгадати</button>
+                        <p id="Gp"></p>
+                        <p id="Gp2"></p>
+                    </div>
+                    <div class="card">
+                        <h3>Камінь, ножиці, папір</h3>
+                        <input type="text" placeholder="Введіть камінь, ножиці або папір" class="inpt" id="knp">
+                        <button class="cbtn" id="KNPbtn">Вибрати</button>
+                        <p id="KNPp"></p>
+                    </div>
+                    <div class="card">
+                        <h3>Калькулятор Індекса Маси Тіла</h3>
+                        <input type="number" placeholder="Введіть ваш ріст" class="inpt" id="h">
+                        <input type="number" placeholder="Введіть вашу вагу" class="inpt" id="w">
+                        <button class="cbtn" id="IMTbtn">Вирахувати</button>
+                        <p id="IMTp"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrap flex">
+                <img class="ft-logo" src="./images/лого школи 1.png" alt="logo">
+                <div class="ft-items1">
+                    <p class="ft-title">Навчання</p>
+                    <p class="ft-text">Загальноосвітня школа <br> <br>Початкова школа</p>
+                    <div class="footer-social flex">
+                        <img src="./images/inst 1.png" alt="inst">
+                        <img src="./images/youtube 1.png" alt="youtube">
+                        <img src="./images/twitter 1.png" alt="twitter">
+                    </div>
+                </div>
+                <div class="ft-items2">
+                    <p class="ft-title">Контакти</p>
+                    <div class="ft-text flex">
+                        <img src="./images/Group 72.png" alt="location">
+                        <p>вул. Ленкавського, 17б</p>
+                    </div>
+                    <p class="ft-secondary-text">(067) 699-57-76 (050) 488-99-51 if@itstep.org <br>
+                        ПН. - ПТ з 09.00 до 19.00 СБ. з 09.00 до 16.00</p>
+                    <div class="ft-text flex">
+                        <img src="./images/Group 72.png" alt="location">
+                        <p>вул. Гузара, 49 (4 поверх)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
