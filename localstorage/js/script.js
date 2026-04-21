@@ -30,7 +30,7 @@ const startTimer = function(){
     const elapsed = Math.floor((Date.now() - startTime) / 1000);
     const timeLeft = 60 - elapsed;
     if(timeLeft <= 0){
-        tp1.textContent = "60";
+        tp1.textContent = "60с";
         tp2.textContent = "Час вийшов";
         clearInterval(interval);
         localStorage.removeItem("startTime");
@@ -46,4 +46,33 @@ if (localStorage.getItem("startTime")) {
 tbtn.addEventListener('click', ()=>{
     localStorage.setItem("startTime", Date.now());
     startTimer();
+});
+const search = document.getElementById("search");
+const s0 = document.getElementById("s0");
+const s1 = document.getElementById("s1");
+const s2 = document.getElementById("s2");
+const s3 = document.getElementById("s3");
+const s4 = document.getElementById("s4");
+const sbtn = document.getElementById("sbtn");
+const arr = JSON.parse(localStorage.getItem("searched")) || [];
+s0.textContent = arr[0] || "";
+s1.textContent = arr[1] || "";
+s2.textContent = arr[2] || "";
+s3.textContent = arr[3] || "";
+s4.textContent = arr[4] || "";
+sbtn.addEventListener("click", ()=>{
+    const val = search.value;
+    if(!val) return;
+    const idx = arr.indexOf(val);
+    if(idx !== -1){
+        arr.splice(idx, 1);
+    }
+    arr.unshift(val);
+    arr.splice(5);
+    localStorage.setItem("searched", JSON.stringify(arr));
+    s0.textContent = arr[0] || "";
+    s1.textContent = arr[1] || "";
+    s2.textContent = arr[2] || "";
+    s3.textContent = arr[3] || "";
+    s4.textContent = arr[4] || "";
 });
