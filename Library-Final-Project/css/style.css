@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex {
+    display: flex;
+}
+/* ----------------------------------------------header */
+.header-wrap{
+    width: 1600px;
+    height: 150px;
+    border: 2px solid black;
+    background: linear-gradient(to top, rgba(150, 75, 0, 1), black);
+}
+.header-menu{
+    padding-top: 55px;
+    margin-left: 290px;
+    gap: 75px;
+}
+.menu-items{
+    color: white;
+    font-size: 32px;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    line-height: 120%;
+}
+.sec{
+    background: repeating-linear-gradient(
+        90deg,
+    rgba(150, 75, 0, 1) 0px,
+    rgba(150, 75, 0, 1) 10px,
+    black 10px,
+    black 20px
+    );
+    width: 1600px;
+    height: auto;
+    border: 2px solid black;
+    min-height: 1000px;
+}
+.innerSec{
+    background-color: rgba(150, 75, 0, 1);
+    width: 1300px;
+    margin-left: 150px;
+    height: auto;
+    border-left: 10px solid black;
+    min-height: 1000px;
+}
+.titsea{
+    padding-top: 35px;
+    margin-left: 470px;
+    gap: 15px;
+}
+.lst-title{
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: "Nunito", sans-serif;
+}
+.search{
+    margin-left: 200px;
+    height: 50px;
+    margin-top: 10px;
+    padding-left: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    font-family: "Nunito", sans-serif;
+}
+.searchBtn{
+    background-color: black;
+    color: white;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid white;
+    width: 65px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.line{
+    border-bottom: 3px solid black;
+    width: 1300px;
+    margin-top: 25px;
+}
+.innerwrap{
+    padding: 10px;
+}
+.add-bookBtn{
+    height: 250px;
+    width: 200px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 100px;
+    cursor: pointer;
+}
+.sech2{
+    color: white;
+    font-family: "Nunito", sans-serif;
+    margin-left: 19px;
+}
