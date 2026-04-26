@@ -22,6 +22,9 @@ a {
 .flex {
     display: flex;
 }
+body{
+    background: radial-gradient(circle, rgba(150, 75, 0, 1) -50%, black 100%);
+}
 /* ----------------------------------------------header */
 .header-wrap{
     width: 1600px;
@@ -101,6 +104,9 @@ a {
 }
 .innerwrap{
     padding: 10px;
+    max-width: 1270px;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 .add-bookBtn{
     height: 250px;
@@ -183,4 +189,46 @@ a {
     border-radius: 10px;
     margin-left: 5px;
     cursor: pointer;
+}
+/* -------------------------------------------книги */
+.img-wrap {
+    position: relative;
+    width: 200px;
+    height: 250px;
+}
+.bimg{
+    height: 250px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.btext{
+    padding-left: 10px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    max-width: 210px;
+}
+.editBtn {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(250, 250, 250, 0.5);
+    color: white;
+    border: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+}
+
+.deleteBtn {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom-right-radius: 20px;
 }
