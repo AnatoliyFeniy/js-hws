@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Librarka</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -25,19 +23,28 @@
     </header>
     <section>
         <div class="container">
-            <div class="sec">
+            <div class="vis-wrap">
                 <div class="innerSec">
-                    <div class="titsea flex">
-                        <h1 class="lst-title">Список книг</h1>
-                        <input type="text" class="search" placeholder="Шукати книгу" id="search">
+                    <div class="vistitsea flex">
+                        <h1 class="vis-title">Робота з відвідувачами</h1>
+                        <input type="text" class="vissearch" placeholder="Шукати відвідувача" id="search">
                         <button class="searchBtn" id="searchBtn">Пошук</button>
                     </div>
                     <div class="line"></div>
-                    <div class="innerwrap flex" id="booksLst">
-                        <div class="baseBtn">
-                            <button class="add-bookBtn" id="addBtn">+</button>
-                            <h2 class="sech2">Додати книгу</h2>
-                        </div>
+                    <div class="visinnerwrap flex" id="vistable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ім'я</th>
+                                    <th>Прізвище</th>
+                                    <th>Телефон</th>
+                                    <th>Дії</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
                     </div>
                     
                 </div>
@@ -48,9 +55,6 @@
 
 
 
-
-
-    <script src="./js/script.js"></script>
+    <script src="./js/visitors.js"></script>
 </body>
-
 </html>

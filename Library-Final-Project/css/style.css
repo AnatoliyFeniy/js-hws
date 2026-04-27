@@ -139,7 +139,7 @@ body{
 .formtitle{
     color: white;
     font-family: "Nunito", sans-serif;
-    margin-left: 260px;
+    margin-left: 220px;
     font-size: 36px;
 }
 .formtitle2{
@@ -231,4 +231,93 @@ body{
     font-size: 16px;
     cursor: pointer;
     border-bottom-right-radius: 20px;
+}
+/* --------------------------------------Робота з відвідувачами */
+.vis-title{
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: "Nunito", sans-serif;
+}
+.vistitsea{
+    padding-top: 35px;
+    margin-left: 340px;
+    gap: 15px;
+}
+.vissearch{
+    margin-left: 100px;
+    height: 50px;
+    margin-top: 10px;
+    padding-left: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    font-family: "Nunito", sans-serif;
+}
+.vis-wrap{
+    background: repeating-linear-gradient(
+        90deg,
+    rgba(150, 75, 0, 1) 0px,
+    rgba(150, 75, 0, 1) 10px,
+    black 10px,
+    black 20px
+    );
+    width: 1600px;
+    height: auto;
+    border: 2px solid black;
+    min-height: 500px;
+}
+.visinnerwrap{
+    max-width: 1300px;
+    flex-wrap: wrap;
+}
+table {
+    width: 1300px;
+    font-family: "Nunito", sans-serif;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: black;
+}
+
+th {
+    color: white;
+    font-size: 22px;
+    padding: 15px 20px;
+    text-align: left;
+    border: 1px solid white;
+}
+
+td {
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border: 1px solid black;
+}
+
+tbody tr {
+    background-color: rgba(0,0,0,0.2);
+}
+
+tbody tr:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+.vbtn{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.vformtitle{
+    color: white;
+    font-family: "Nunito", sans-serif;
+    margin-left: 150px;
+    font-size: 36px;
 }

@@ -1,5 +1,6 @@
 const addBtn = document.getElementById("addBtn");
 // -----------------------------------список книг
+// ----------------------------------рендер і кнопки
 const renderBooks = function(){
     const bcontainer = document.getElementById("booksLst");
     const baseBtn = document.querySelector(".baseBtn");
@@ -81,11 +82,14 @@ const renderBooks = function(){
             alert("Заповніть всі поля!");
             return;
         }
+        if(year < 0){
+            alert("Рік не може бути від'ємним")
+            return;
+        }
 
         const books = JSON.parse(localStorage.getItem("books")) || [];
         books[index] = { title, year, author, publisher, img };
         localStorage.setItem("books", JSON.stringify(books));
-
         document.body.removeChild(modal);
         renderBooks();
     });
@@ -110,6 +114,7 @@ const renderBooks = function(){
     bcontainer.appendChild(card);
 });
 };
+// ----------------------------------------------------модалка
 addBtn.addEventListener("click", function(){
     if(document.getElementById("modal")) return;
     const modal = document.createElement("div");
@@ -142,7 +147,7 @@ addBtn.addEventListener("click", function(){
         <div class="userform">
         <input class="forminpt" type="text" id="userFirstName" placeholder="Ім'я">
         <input class="forminpt" type="text" id="userLastName" placeholder="Прізвище">
-        <input class="forminpt" type="number" id="userPhone" placeholder="Номер телефону">
+        <input class="forminpt" type="text" id="userPhone" placeholder="Номер телефону">
         </div>
         <div class="fbtns">
         <button class="fbtn" id="saveBtn">Зберегти</button>
@@ -165,18 +170,34 @@ addBtn.addEventListener("click", function(){
     const lastName = document.getElementById("userLastName").value;
     const phone = document.getElementById("userPhone").value;
 
-    if(!title || !year || !author || !publisher || !img || !firstName || !lastName || !phone){
+    if(!title || !year || !author || !publisher || !img){
         alert("Заповніть всі поля!");
         return;
     }
-
+    if(year < 0 && phone < 0){
+        alert("Числа не можуть бути від'ємні!");
+        return;
+    }
+    if(phone){
+    if(phone.length < 11){
+        alert("В номері телефону має бути мінімум 11 цифр.")
+        return;
+    }}
+    document.getElementById("userPhone").addEventListener("input", function(){
+    this.value = this.value.replace(/[^0-9]/g, "");
+    });
     const book = {
         title, year, author, publisher, img,
     };
-
+    const visitor = { firstName, lastName, phone };
     const books = JSON.parse(localStorage.getItem("books")) || [];
     books.push(book);
     localStorage.setItem("books", JSON.stringify(books));
+    const visitors = JSON.parse(localStorage.getItem("visitors")) || []; 
+    if(firstName && lastName && phone){ 
+        visitors.push(visitor);
+        localStorage.setItem("visitors", JSON.stringify(visitors));
+    }
 
     document.body.removeChild(modal);
     renderBooks();
