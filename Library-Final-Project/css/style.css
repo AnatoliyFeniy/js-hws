@@ -25,7 +25,7 @@ a {
 body{
     background: radial-gradient(circle, rgba(150, 75, 0, 1) -50%, black 100%);
 }
-/* ----------------------------------------------header */
+/* -----------------------------------------------header */
 .header-wrap{
     width: 1600px;
     height: 150px;
